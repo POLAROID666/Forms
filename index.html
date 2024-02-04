@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="regForm" action="#">
+        <h1>Регистрация:</h1>
+        <div class="tab">Ваше имя:
+          <p><input placeholder="Имя..." oninput="this.className = ''" name="fname"></p>
+          <p><input placeholder="Фамилия..." oninput="this.className = ''" name="lname"></p>
+        </div>
+        <div class="tab">Контактная информация:
+          <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+          <p><input placeholder="Телефон..." oninput="this.className = ''" name="phone"></p>
+        </div>
+        <div class="tab">Дата рождения:
+          <p><input placeholder="День" oninput="this.className = ''" name="dd"></p>
+          <p><input placeholder="Месяц" oninput="this.className = ''" name="nn"></p>
+          <p><input placeholder="Год" oninput="this.className = ''" name="yyyy"></p>
+        </div>
+        <div class="tab">Информация для входа:
+          <p><input placeholder="Пользователь..." oninput="this.className = ''" name="uname"></p>
+          <p><input placeholder="Пароль..." oninput="this.className = ''" name="pword" type="password"></p>
+        </div>
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Далее</button>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
